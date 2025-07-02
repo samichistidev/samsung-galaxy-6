@@ -1,0 +1,217 @@
+@font-face {
+  font-family: SatoshiVariable;
+  src: url(./fonts/Satoshi-Medium.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: SatoshiVariable;
+}
+
+body {
+  padding: 48px 120px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1120px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 140px;
+  margin: auto auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 48px;
+  font-weight: 500;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar ul li a {
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.navbar ul li a.active {
+  color: black;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  background-color: #0066ff;
+  border-radius: 100px;
+}
+
+button a {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.navbar ul li button a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  gap: 32px;
+}
+
+.wrapper h2 {
+  font-size: 68px;
+  line-height: 72px;
+  font-weight: 500;
+  max-width: 602px;
+}
+
+.wrapper p {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.wrapper .right {
+  max-width: 50%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 48px;
+}
+
+.wrapper .right img {
+  cursor: pointer;
+  height: 200px;
+}
+
+.wrapper .right .watch1 {
+  view-transition-name: watch1;
+}
+
+.wrapper .right .watch2 {
+  view-transition-name: watch2;
+}
+
+.wrapper .right .watch3 {
+  view-transition-name: watch3;
+}
+
+.wrapper .right .watch4 {
+  view-transition-name: watch4;
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-group(*) {
+  transition-duration: 0.5s;
+}
+
+#watch1-details .watch1 {
+  height: 400px;
+  width: 400px;
+}
+
+#watch2-details .watch2 {
+  height: 400px;
+  width: 400px;
+}
+
+#watch3-details .watch3 {
+  height: 400px;
+  width: 400px;
+}
+
+#watch4-details .watch4 {
+  height: 400px;
+  width: 400px;
+}
+
+#watch1-details .wrapper .right {
+  max-width: 50%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 48px;
+}
+
+#watch2-details .wrapper .right {
+  max-width: 50%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 48px;
+}
+
+#watch3-details .wrapper .right {
+  max-width: 50%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 48px;
+}
+
+#watch4-details .wrapper .right {
+  max-width: 50%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 48px;
+}
+
+.flex {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+#watch1-details .container,
+#watch2-details .container,
+#watch3-details .container,
+#watch4-details .container {
+  justify-content: center;
+}
