@@ -1,1 +1,1 @@
-# samsung-galaxy-6!
+# samsung-galaxy-6
